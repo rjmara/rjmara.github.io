@@ -1,12 +1,14 @@
 <!--
 File: index.html
-GUI Assignment: Creating Your First Web Page
-Wenjin Zhou, UMass Lowell Computer Science, wzhou@cs.uml.edu
-What to submit: Nothing to submit as long as your editor is ready to use.
-PART 2: First Web Page
-Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
+GUI Assignment 1: Creating My First Web Page
+Ryan Maradiaga, UMass Lowell Computer Science, ryan_maradiaga@student.uml.edu
+Copyright (c) 2023 by Ryan Maradiaga. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
-updated by WZ on July 7, 2021 at 9:23 AM
+Instructor: Professor Wenjin Zhou
+Sources of Help: W3Schools and https://youtu.be/S1LyYnyqRRs this video 
+for an idea I had, but ended up scrapping
+Brief Overview: This is my homepage for my portfolio website. I spend most 
+of my time on the header, but included images and tables as well. 
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,64 +19,107 @@ updated by WZ on July 7, 2021 at 9:23 AM
     <script src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">RJM</a>&nbsp;/</li>
-      </ul>
-    </nav>
-    <section class="first-section header-video-wrapper">
-      <video loop autoplay muted class="headerVideo">
-        <source src="assets/video/bangkok_roads.mp4" type="video/mp4" />
-      </video>
-      <h2 class="heading-text-big">Hello,</h2>
-      <p class="heading-text-small">I'm Ryan Maradiaga</p>
-      <svg width="100" height="100">
-        <!--<path d="M0 0 L50 75 L100 0Z" /> -->
-        <line
-          x1="0"
-          y1="0"
-          x2="50"
-          y2="75"
-          style="stroke: #f1e3e4; stroke-width: 5"
-        />
-        <line
-          x1="100"
-          y1="0"
-          x2="50"
-          y2="75"
-          style="stroke: #f1e3e4; stroke-width: 5"
-        />
-      </svg>
-    </section>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="hobbies.html">Hobbies</a>&nbsp;</li>
+        </ul>
+      </nav>
+      <section class="first-section header-video-wrapper">
+        <video loop autoplay muted class="headerVideo">
+          <source src="assets/video/bangkok_roads.mp4" type="video/mp4" />
+        </video>
+        <h2 class="heading-text-big">Hello,</h2>
+        <p class="heading-text-small">I'm Ryan Maradiaga</p>
+        <svg width="100" height="100">
+          <line
+            x1="0"
+            y1="0"
+            x2="50"
+            y2="75"
+            style="stroke: #f1e3e4; stroke-width: 5"
+          />
+          <line
+            x1="100"
+            y1="0"
+            x2="50"
+            y2="75"
+            style="stroke: #f1e3e4; stroke-width: 5"
+          />
+        </svg>
+      </section>
 
-    <section class="second-section">
-      <!--
-      <table class="flex-center">
-        <tr>
-          <th class="greeting">Hello! I'm Ryan Maradiaga</th>
-        </tr>
-        <tr>
-          <th class="intro">Introduction</th>
-        </tr>
-        <tr>
-          <td>
-            I'm a Computer Science undergraduate student at University of
-            Massachusetts Lowell. I currently work as a Front-end developer in
-            one of the University's labs. I aspire to be a Full-stack web
-            developer and create intuitive and instructive applications.
-          </td>
-          <td>
-            I am an introverted and inquisitive student that is passionate about
-            design, exercise, music, and cats.
-            <a href="hobbies.html">Here are some of my personal hobbies.</a>
-          </td>
-        </tr>
-      </table>
-      -->
-    </section>
-
-    <section class="third-section">
-      <!--<h1>Page Three</h1>-->
-    </section>
+      <div class="second-section">
+        <h3 class="section-header">About Me</h3>
+        <p class="section-text">
+          I'm a Computer Science undergraduate student at University of
+          Massachusetts Lowell. I currently work as a Front-end developer in one
+          of the University's labs. I aspire to be a Full-stack web developer
+          and create intuitive and instructive applications.
+        </p>
+        <table class="flex-center">
+          <thead>
+            <tr class="flex-center">
+              <th class="table-intro">Skills & Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>ReactJS & Bootstrap</th>
+              <td>
+                At my university, I work in a lab under the Engaging Computing
+                Group. The project is called LearnMYR, and it is a coding
+                environment that uses JavaScript and VR elements to teach K-12
+                students about the principals of Computer Science.
+                <a href="https://github.com/engaging-computing/MYR"
+                  >Here is a link to the GitHub repository.</a
+                >
+              </td>
+              <td>
+                <img
+                  class="table-img"
+                  src="assets/images/myr_example.png"
+                  alt="LearnMYR site"
+                  width="500"
+                  height="320"
+                />
+              </td>
+            </tr>
+            <th>HTML & CSS</th>
+            <td>
+              This entire page is created using HTML and CSS as a part of my
+              Graphical User Interface class. Although the course is called GUI,
+              we learn mostly about web development using HTML, CSS, JavaScript,
+              and JQuery. I used an amazing cat image because you're already
+              seeing my work on this website, but if you want the GitHub
+              repository,
+              <a href="https://github.com/rjmara/rjmara.github.io"
+                >here it is.</a
+              >
+            </td>
+            <td>
+              <img
+                class="table-img"
+                src="assets/images/cat_coding.png"
+                alt="Cat on a keyboard :>"
+                width="500"
+                height="320"
+              />
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <footer class="flex-center">
+        <p>Copyright © 2023 Ryan Maradiaga</p>
+        <a href="https://github.com/rjmara" target="_blank">
+          <img
+            src="assets/images/github-mark.png"
+            alt="GitHub logo mask"
+            width="50"
+            height="50"
+          />
+        </a>
+      </footer>
+    </div>
   </body>
 </html>

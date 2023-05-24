@@ -8,6 +8,19 @@ Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
 updated by WZ on July 7, 2021 at 9:23 AM
 -->
+
+<!--
+File: Hobbies.html
+GUI Assignment 1: Creating My First Web Page
+Tim Truong, UMass Lowell Computer Science, tim_truong1@student.uml.edu
+Copyright (c) 2022 by Tim Truong. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Updated on 5/25/22 at 8:30pm.
+Instructor: Professor Wenjin Zhou
+Sources of Help: W3Schools
+Brief Overview: This is a webpage of my hobbies and it's an example 
+of the use of tables. Shows my interest in art and reading. 
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,16 +30,75 @@ updated by WZ on July 7, 2021 at 9:23 AM
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <section class="first-section">
-        <nav>
-          <ul>
-            <li><a href="index.html">RJM</a>&nbsp;/</li>
-            <li>&nbsp;<a href="#">Hobbies</a>&nbsp;/</li>
-          </ul>
-        </nav>
-        <h1>Ryan Maradiaga</h1>
-      </section>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a>&nbsp;</li>
+        </ul>
+      </nav>
+      <div class="second-section">
+        <h3 class="section-header">About Me</h3>
+        <p class="section-text">
+          I'm a Computer Science undergraduate student at University of
+          Massachusetts Lowell. I currently work as a Front-end developer in one
+          of the University's labs. I aspire to be a Full-stack web developer
+          and create intuitive and instructive applications.
+        </p>
+        <table class="flex-center">
+          <thead>
+            <tr class="flex-center">
+              <th class="table-intro">Hobbies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Reading</th>
+              <td>
+                I love to read. That is a recent development; when I was
+                younger, I hated reading because of boring books I was assigned.
+                Things changed after I started reading science fiction. My
+                favorite books are "Dune" and "This is how you lose a time war."
+              </td>
+              <td>
+                <img
+                  class="table-img"
+                  src="assets/images/me_and_my_cat.jpg"
+                  alt="me and my cat"
+                  width="500"
+                  height="320"
+                />
+              </td>
+            </tr>
+            <th>Art</th>
+            <td>
+              Although I don't have much time anymore, I love to spend some of
+              it creating art. It can be very relaxing, but during the semesters
+              I don't always have the most time. That makes it a lot more of a
+              stressful thing, but I hope to get back into things soon!
+            </td>
+            <td>
+              <img
+                class="table-img"
+                src="assets/images/my_art_Example.png"
+                alt="example of the art i make"
+                width="500"
+                height="500"
+              />
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <footer class="flex-center">
+        <p>Copyright © 2023 Ryan Maradiaga</p>
+        <a href="https://github.com/rjmara" target="_blank">
+          <img
+            src="assets/images/github-mark.png"
+            alt="GitHub logo mask"
+            width="50"
+            height="50"
+          />
+        </a>
+      </footer>
     </div>
   </body>
 </html>
