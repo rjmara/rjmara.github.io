@@ -192,6 +192,10 @@ tbody {
     border-width: 2px;
 }
 
+table {
+    margin-bottom: 100px;
+}
+
 th {
     margin: 20px;
     text-align: start;
