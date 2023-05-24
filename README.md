@@ -16,7 +16,11 @@ This portfolio website provides an introduction to who I am, and my skills as a 
 
 The HTML code (`index.html`) defines the structure of the website and includes the necessary elements for each section. The CSS code (`style.css`) contains the styles and layout specifications to enhance the visual appearance of the website.
 
-[![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,html,css" />
+  </a>
+</p>
 
 ## Preview
 
