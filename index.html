@@ -8,7 +8,7 @@ Instructor: Professor Wenjin Zhou
 Sources of Help: W3Schools and https://youtu.be/S1LyYnyqRRs this video 
 for an idea I had, but ended up scrapping
 and this is the video in the header "Stock footage provided by Freepik, downloaded from videvo.net"
-I also googled cat coding for the cat.
+I also googled cat coding for the cat. I also used this google font: https://fonts.google.com/specimen/Playfair+Display
 Brief Overview: This is my homepage for my portfolio website. I spend most 
 of my time on the header, but included images and tables as well. 
 -->
@@ -24,31 +24,33 @@ of my time on the header, but included images and tables as well.
     <div>
       <nav>
         <ul>
-          <li><a href="hobbies.html">Hobbies</a>&nbsp;</li>
+          <li><a class="links" href="hobbies.html">Hobbies</a>&nbsp;</li>
         </ul>
       </nav>
       <section class="first-section header-video-wrapper">
         <video loop autoplay muted class="headerVideo">
           <source src="assets/video/bangkok_roads.mp4" type="video/mp4" />
         </video>
-        <h2 class="heading-text-big">Hello,</h2>
+        <h2 id="information-section" class="heading-text-big">Hello,</h2>
         <p class="heading-text-small">I'm Ryan Maradiaga</p>
-        <svg width="100" height="100">
-          <line
-            x1="0"
-            y1="0"
-            x2="50"
-            y2="75"
-            style="stroke: #f1e3e4; stroke-width: 5"
-          />
-          <line
-            x1="100"
-            y1="0"
-            x2="50"
-            y2="75"
-            style="stroke: #f1e3e4; stroke-width: 5"
-          />
-        </svg>
+        <a href="information-section">
+          <svg width="100" height="100">
+            <line
+              x1="0"
+              y1="0"
+              x2="50"
+              y2="75"
+              style="stroke: #f1e3e4; stroke-width: 5"
+            />
+            <line
+              x1="100"
+              y1="0"
+              x2="50"
+              y2="75"
+              style="stroke: #f1e3e4; stroke-width: 5"
+            />
+          </svg>
+        </a>
       </section>
 
       <div class="second-section">
@@ -70,7 +72,9 @@ of my time on the header, but included images and tables as well.
                 Group. The project is called LearnMYR, and it is a coding
                 environment that uses JavaScript and VR elements to teach K-12
                 students about the principals of Computer Science.
-                <a href="https://github.com/engaging-computing/MYR"
+                <a
+                  class="links"
+                  href="https://github.com/engaging-computing/MYR"
                   >Here is a link to the GitHub repository.</a
                 >
               </td>
@@ -93,7 +97,9 @@ of my time on the header, but included images and tables as well.
                 JavaScript, and JQuery. I used an amazing cat image because
                 you're already seeing my work on this website, but if you want
                 the GitHub repository,
-                <a href="https://github.com/rjmara/rjmara.github.io"
+                <a
+                  class="links"
+                  href="https://github.com/rjmara/rjmara.github.io"
                   >here it is.</a
                 >
               </td>
