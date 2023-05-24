@@ -1,7 +1,20 @@
-/* I seperate my html code into sections, and the code below is used to 
-style the first section. I use the first section as a header for my site*/
+/*
+File: style.css
+GUI Assignment 1: Creating My First Web Page
+Ryan Maradiaga, UMass Lowell Computer Science, ryan_maradiaga@student.uml.edu
+Copyright (c) 2023 by Ryan Maradiaga. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Instructor: Professor Wenjin Zhou
+Sources of Help: W3Schools
+Brief Overview: This is my css file that handles the styling for both my html files.
+this styling allows for responsive design for those on desktop or mobile. 
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Playfair Display', serif;
@@ -26,25 +39,36 @@ section {
 /* handle styling for nav bar and its elements */
 
 nav {
+    text-align: center;
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
+    height:25%;
     margin: 0;
     padding: 0;
+    transform: translateY(150px);
 }
 
 ul {
     list-style-type: none; 
-    margin: 0; 
+    margin-block: 0; 
+    margin-inline: auto;
     padding-inline: 10vw;
     padding-top: 5vh;
 }
 
-nav ul li {
-    display: inline; 
-    float: left;
+li {
+    display:inline;
+    margin-block:20px;
+    margin-inline: 25px;
+}
+
+.header-links {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 .links {
@@ -62,15 +86,24 @@ svg {
     margin-top: 90vh;
 }
 
+button {
+    width: 150px;
+    height: 150px;
+    margin-top: 850px; 
+    color:rebeccapurple;
+    z-index: 1;
+}
+
 /* This is for the animation called bobble that moves my svg up and down */
+
 @keyframes bobble {
     33% {margin-top: 90vh}
     66% {margin-top: 80vh}    
     100% {margin-top: 90vh}
-
 }
 
 /* This makes my video take 100% of the space inside the first section */
+
 .headerVideo {
     position: absolute;
     top: 0;
@@ -102,7 +135,7 @@ svg {
 
 /* prevents big heading text from becoming too large on large resolution screens */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1920px) {
     .heading-text-big {
         position: absolute;
         width: 100%;
@@ -110,7 +143,7 @@ svg {
         font-size: 500px;
         line-height: 100vh;
         color: #f1e3e4;
-        left: 50px;
+        left: 0px;
         user-select: none;
     }
   }
@@ -125,6 +158,58 @@ svg {
     justify-content: end;
     user-select: none;
 }
+
+/* prevents header text from becoming too large on smaller resolution screens */
+
+@media screen and (max-width: 1080px) {
+    .heading-text-big {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: 200px;
+        line-height: 100vh;
+        color: #f1e3e4;
+        left: 0px;
+        user-select: none;
+    }
+
+    .heading-text-small {
+        position: absolute;
+        height: 400px;
+        font-size: 5vh;
+        color: #f1e3e4;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        user-select: none;
+    }
+
+    nav {
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:25%;
+        margin: 0;
+        padding: 0;
+        transform: translateY(200px);
+    }
+
+    li {
+        display:inline;
+        margin-block:20px;
+        margin-inline: 10px;
+    }    
+  }
+
+  @media screen and (max-height: 850px) {
+    svg {
+        display: none;
+    }
+  }
+
 
 .flex-center {
     display: flex; 
